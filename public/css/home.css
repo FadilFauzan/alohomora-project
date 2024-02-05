@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-content{
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.background-home-thumbnail{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/img/background4.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.explore-button{
+    width: 120px;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #ffff00;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    transition: .5s;
+}
+
+.explore-button:hover{
+    background: orange;
+}
+
+.category-card{
+    color: white;
+    padding: 10px;
+    margin-top: 25px;
+    height: 230px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(/img/Ebooks.jpg);
+}
+.card2{
+    background-image: url(/img/Magazines.jpg);
+}.card3{
+    background-image: url(/img/Audiobooks.jpg);
+}.card4{
+    background-image: url(/img/Documents.jpg);
+}
+
+.category-card:hover{
+    transform: translateY(-10px);
+}
+
+.category-list{
+    color: #ffff00;
+    text-shadow: 0 0 10px #302f2f;
+    font-size: 18px;
+}
+
+.category-card p{
+    text-shadow: 0 0 10px #302f2f;
+    color: white;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .explore-button {
+        width: 100%; /* Make the button take up 100% width */
+    }
+
+    .home-content{
+        padding: 0;
+    }
+}
